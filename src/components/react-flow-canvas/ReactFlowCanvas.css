@@ -1,0 +1,60 @@
+.flow {
+    flex-direction: row;
+    display: flex;
+    height: calc(100vh - 40px);
+}
+
+.flow aside {
+    border-right: 1px solid #fff;
+    padding: 15px 10px;
+    font-size: 12px;
+    background: #fbfbfb;
+    width: 30vh;
+}
+
+.flow aside>* {
+    cursor: grab;
+}
+
+.flow aside .description {
+    margin-bottom: 10px;
+}
+
+.flow .reactflow-wrapper {
+    flex-grow: 1;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .flow {
+        flex-direction: row;
+    }
+
+    .flow aside {
+        width: 20%;
+        max-width: 180px;
+    }
+}
+
+
+.controls_node label {
+    display: block;
+}
+
+.controls_node__bglabel {
+    margin-top: 10px;
+}
+
+.controls_node__checkboxwrapper {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.save-btn {
+    display: flex;
+    justify-content: space-between;
+    min-height: '80px';
+    text-align: end;
+    background-color: rgb(58, 177, 228);
+}
